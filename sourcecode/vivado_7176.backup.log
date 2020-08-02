@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 10:26:25 2020
+# Process ID: 7176
+# Current directory: K:/FPGA/camera/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9192 K:\FPGA\camera\Camera_Demo\Camera_Demo.xpr
+# Log file: K:/FPGA/camera/Camera_Demo/vivado.log
+# Journal file: K:/FPGA/camera/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/FPGA/camera/Camera_Demo/Camera_Demo.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/FPGA/camera/Camera_Demo/IP_Core'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'k:/FPGA/LED-IP/Driver-SK6805-IP/Driver_SK6805'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/FPGA/LED-IP/Driver-SK6805-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'K:/vivado2018/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 806.938 ; gain = 203.098
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Aug  1 10:47:50 2020] Launched synth_1...
+Run output will be captured here: K:/FPGA/camera/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Aug  1 10:49:09 2020] Launched impl_1...
+Run output will be captured here: K:/FPGA/camera/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Aug  1 10:50:40 2020] Launched impl_1...
+Run output will be captured here: K:/FPGA/camera/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 11:02:26 2020...
